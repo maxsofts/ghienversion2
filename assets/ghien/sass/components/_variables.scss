@@ -1,0 +1,13 @@
+
+/* 1. Colors
+   ========================================================================== */
+$primary-color: ghien_color("ghien-primary", "base") !default;
+$primary-color-light: lighten($primary-color, 15%) !default;
+$primary-color-dark: darken($primary-color, 15%) !default;
+
+$secondary-color: ghien_color("ghien-red", "base") !default;
+$success-color: ghien_color("green", "base") !default;
+$error-color: ghien_color("red", "base") !default;
+$link-color: ghien_color("light-blue", "darken-1") !default;
+
+$ghien-color-blue: ghien_color("ghien-blue", "base") !default;

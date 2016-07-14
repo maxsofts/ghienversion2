@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+// Mixins
+// @import "components/prefixer";
+@import "components/color";
+@import "components/resize";
+@import "components/variables";
+
+
+@import "components/mixins";
+
+//Navbar
+
+@import "components/navbar";
+
+//cards
+@import "components/cards";
+//Tabs
+@import "components/tabs";

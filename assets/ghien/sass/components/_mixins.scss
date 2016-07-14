@@ -1,0 +1,60 @@
+/* Style
+   ========================================================================== */
+body {
+  background-color: ghien_color('ghien-grey', 'base');
+}
+
+main {
+  margin-top: 40px;
+
+}
+
+/* Style Main
+   ========================================================================== */
+.file-control {
+  opacity: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+}
+
+//Facebook Login
+.ghien-field-break {
+
+  padding-top: 25px;
+
+  fieldset {
+    border: 2px solid $primary-color;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+
+    legend {
+      padding: 0 10px;
+      width: auto;
+      margin: 0;
+      border: 0;
+      line-height: 14px;
+      font-weight: normal;
+      font-size: 14px;
+
+      strong {
+        text-transform: uppercase;
+      }
+    }
+  }
+  .btn-facebook-login {
+    background: ghien_color('ghien-facebook', 'base');
+    color: ghien_color('shades', 'white');
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 16px;
+    padding: 10px 55px;
+    display: inline;
+  }
+}
+
+//Resize height
+.ghien-btn{
+  margin-bottom: 15px;
+}

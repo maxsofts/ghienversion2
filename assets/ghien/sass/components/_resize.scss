@@ -1,0 +1,25 @@
+/* Resize Ghien
+   ========================================================================== */
+$ghien-height: height !default;
+$ghien-width: width !default;
+$ghien-max-height: max-height !default;
+$ghien-max-width: max-width !default;
+
+$ghien-rezize: (
+        "ghien-height":$ghien-height,
+        "ghien-width":$ghien-width,
+        "ghien-max-height":$ghien-max-height,
+        "ghien-max-width":$ghien-max-width
+);
+
+$ghien-max-size: 100 !default;
+$ghien-step: 5 !default;
+
+@each $ghien-slug, $ghien-key in $ghien-rezize {
+  @for $i from 1 through ceil($ghien-max-size/$ghien-step) {
+    $value: $i * $ghien-step;
+    .#{$ghien-slug}-#{$value} {
+      #{$ghien-key}: #{$value}px;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+nav {
+  background-color: $primary-color;
+  a.ghien-logo {
+    img {
+      max-height: 80px;
+    }
+  }
+  ul {
+    li {
+      &.active {
+        background-color: $secondary-color;
+      }
+    }
+    a {
+      &:hover {
+        background-color: $secondary-color;
+      }
+      &.new-icon {
+        position: relative;
+        &:after {
+          content: 'New';
+          display: block;
+          position: absolute;
+          text-transform: uppercase;
+          padding: 0 4px;
+          top: 2px;
+          right: 2px;
+          color: ghien_color('shades', 'white');
+          font-size: 9px;
+          font-weight: bold;
+          border-radius: 2px;
+          background-color: $ghien-color-blue;
+          height: 14px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+  //Mobile
+  div.side-nav {
+    background-color: $primary-color;
+    a {
+
+      &.brand-logo {
+        position: relative;
+      }
+    }
+    ul {
+      background: ghien_color('shades', 'white');
+      li {
+
+      }
+      a {
+        font-weight: bold;
+
+        &.new-icon {
+          &:after {
+            right: 20px;
+          }
+        }
+      }
+    }
+  }
+}
