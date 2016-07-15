@@ -352,11 +352,7 @@ main {
   .ghien-field-break .btn-facebook-login {
     background: #3b5998;
     color: #FFFFFF;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 16px;
-    padding: 10px 55px;
-    display: inline; }
+    font-size: 20px; }
 
 .ghien-btn {
   margin-bottom: 15px; }

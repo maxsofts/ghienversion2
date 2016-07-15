@@ -153,7 +153,9 @@
                                 <button class="ghien-btn btn waves-effect waves-light ghien-blue">
                                     Đăng nhập
                                 </button>
-                                <button class="ghien-btn btn waves-effect waves-light red">
+                                <button class="ghien-btn btn waves-effect waves-light red"
+                                        onclick="$('#modal_forget_password_form').openModal();"
+                                >
                                     Quên mật khẩu
                                 </button>
                             </div>
@@ -290,8 +292,39 @@
                 </div>
             </div><!-- End form gửi lại mã kích hoạt -->
         </div>
+    </div><!--End Modal kích hoạt tài khoản -->
 
-    </div>
+    <!-- Modal quên mật khẩu -->
+    <div id="modal_forget_password_form" class="modal bottom-sheet">
+        <div class="modal-header">
+            <ul class="tabs ghien-tabs">
+                <li class="tab col s3"><a class="active" href="#forget_password_send">Lấy lại mật khẩu mới</a></li>
+            </ul>
+        </div>
+        <div class="ghien-field-break">
+            <div id="forget_password_send" class="col s12">
+                <div class="center">
+                    <fieldset>
+                        <legend><strong class="red-text">Nhập số điện thoại của bạn, chúng tôi sẽ gửi cho bạn mật khẩu mới để đăng nhập</strong></legend>
+                    </fieldset>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 m6">
+                        <i class="material-icons prefix">phonelink_ring</i>
+                        <input id="forget_username_send" type="tel" value="01693493926" class="validate"
+                               require="require">
+                        <label for="forget_username_send">Số điện thoại</label>
+                    </div>
+                    <div class="input-field col s12 m6 center">
+                        <button type="submit" class="ghien-btn btn waves-effect waves-light ghien-blue"
+                                onclick="$('.modal').each(function(){$(this).closeModal();});return  Materialize.toast('Gửi tin nhắn thành công', 5000);">
+                            Gửi lại mật khẩu
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- End modal quên mật khẩu -->
 </header><!-- Kết Header -->
 
 <!-- Body -->
