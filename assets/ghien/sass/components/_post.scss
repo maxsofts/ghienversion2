@@ -1,10 +1,17 @@
 footer{
-	background:transparent !important;
+	background:ghien_color('shades', 'transparent') !important;
 }
 .title-category{
 	color: #fff;
     text-transform: uppercase;
-    background: #192836;
+    background: ghien_color('ghien-primary', 'base');
     padding: 10px;
-    font-weight: bold;
+    font-weight: 700;
+}
+.content{
+	padding:15px 10px;
+	background-color:#fff;
+}
+.no-margin-top{
+	margin-top:0;
 }
