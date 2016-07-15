@@ -408,4 +408,14 @@ nav {
     background-color: #182837;
     color: #FFFFFF; }
 
+footer {
+  background: transparent !important; }
+
+.title-category {
+  color: #fff;
+  text-transform: uppercase;
+  background: #192836;
+  padding: 10px;
+  font-weight: bold; }
+
 /*# sourceMappingURL=ghien.css.map */

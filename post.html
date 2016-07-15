@@ -2,8 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Title</title>
-
+		<title>Ghienbongda.vn - Mạng xã hội bóng đá đầu tiên tại Việt Nam</title>
+		<link href="http://ghienbongda.vn/static/home/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 		<!--Import Google Icon Font-->
 		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<!--Import materialize.css-->
@@ -98,7 +98,7 @@
 					</ul>
 				</div>
 				<div class="modal-content">
-					<div class="row">
+					
 						<!-- Form Đăng nhập -->
 						<div id="modal_login_form" class="col s12">
 
@@ -161,7 +161,7 @@
 							<div class="row">
 
 							</div>
-						</div><!-- Form Đăng ký -->
+						<!-- Form Đăng ký -->
 					</div>
 				</div>
 			</div> <!-- End Modal Đăng nhập đăng ký -->
@@ -173,96 +173,82 @@
 				<div class="row">
 					<!-- Content Left -->
 					<div class="col s12 m6 l8">
-						<!-- Status -->
-						<div class="card-panel hoverable ghien-card-panel">
-							<!-- Add new Status -->
+						<header class="title-category">
+							<i class="fa fa-calendar-check-o"></i> Gừi bài viết
+						</header>
+						<div class="card-panel hoverable">
 							<div class="row">
-								<!-- Avatar -->
-								<div class="col s12 m2 center">
-									<img src="assets/ghien/images/main/logo_gbd.png" class="responsive-img ghien-card-avatar"
-									alt="Avatar"/>
-								</div> <!-- End Avatar -->
-								<!-- Input new feed -->
-								<div class="col s12 m10">
-									<div class="input-field">
-										<textarea id="newStatus" class="materialize-textarea"></textarea>
-										<label for="newStatus">Bạn đang nghĩ gì ?</label>
-									</div>
-									<!-- Require Login -->
-									<div class="clearfix">
-										<label for="image" class="btn waves-effect waves-light grey" name="action">
-											<i class="tiny material-icons">camera_enhance</i>
-										</label>
-										<input type="file" id="image" name="image" class="file-control"
-										onchange="return $(this).uploadImage()">
-
-										<div id="image-loader" class="preloader-wrapper small active hide">
-											<div class="spinner-layer spinner-blue">
-												<div class="circle-clipper left">
-													<div class="circle"></div>
-												</div>
-												<div class="gap-patch">
-													<div class="circle"></div>
-												</div>
-												<div class="circle-clipper right">
-													<div class="circle"></div>
-												</div>
-											</div>
-
-											<div class="spinner-layer spinner-red">
-												<div class="circle-clipper left">
-													<div class="circle"></div>
-												</div>
-												<div class="gap-patch">
-													<div class="circle"></div>
-												</div>
-												<div class="circle-clipper right">
-													<div class="circle"></div>
-												</div>
-											</div>
-
-											<div class="spinner-layer spinner-yellow">
-												<div class="circle-clipper left">
-													<div class="circle"></div>
-												</div>
-												<div class="gap-patch">
-													<div class="circle"></div>
-												</div>
-												<div class="circle-clipper right">
-													<div class="circle"></div>
-												</div>
-											</div>
-
-											<div class="spinner-layer spinner-green">
-												<div class="circle-clipper left">
-													<div class="circle"></div>
-												</div>
-												<div class="gap-patch">
-													<div class="circle"></div>
-												</div>
-												<div class="circle-clipper right">
-													<div class="circle"></div>
-												</div>
-											</div>
+								<form method="POST" class="col s12">
+									<div class="row">
+									
+										<div class="input-field col s12">
+											<i class="material-icons prefix">https</i>
+											<select id="slct_category" class="validate">
+												<option value="" disabled selected>Chọn chuyên mục</option>
+												<option value="1">Option 1</option>
+												<option value="2">Option 2</option>
+												<option value="3">Option 3</option>
+											</select>
+											<label for="slct_category">Chuyên Mục</label>
 										</div>
-										<a class="waves-effect waves-light btn right">
-											Đăng
-										</a>
-									</div><!-- End require Login -->
-								</div>
+										
+										<div class="input-field col s12">
+											<i class="material-icons prefix">https</i>
+											<input id="txt_title" type="text" />
+											<label for="txt_title">Tiêu Đề Bài Viết</label>
+										</div>
+										
+										<div class="input-field col s12">
+											<i class="material-icons prefix">mode_edit</i>
+											<textarea id="area_description" class="materialize-textarea"></textarea>
+											<label for="area_description">Mô Tả</label>
+										</div>
+										
+										<div class="input-field col s12">
+											<i class="material-icons prefix">mode_edit</i>
+											<textarea id="area_detail" class="materialize-textarea"></textarea>
+											<label for="area_detail">Chi Tiết</label>
+										</div>
+										
+										<div class="input-field col s12 center">
+											<button class="ghien-btn btn waves-effect waves-light ghien-blue">
+												Đăng
+											</button>
+											<button type="reset" class="ghien-btn btn waves-effect waves-light red">
+												Xóa
+											</button>
+										</div>
+										
+									</div>
+								</form>
 							</div>
 						</div>
 					</div><!-- End Content left -->
 					<!-- Content Right -->
 					<div class="col s12 m6 l4">
+						<header class="title-category">
+							<i class="fa fa-calendar-check-o"></i> Gừi bài viết
+						</header>
 						<div class="card-panel hoverable">
 							1234
 						</div>
-					</div>
+						<div class="card-panel hoverable">
+							1234
+						</div>
+					</div><!-- End Content Right -->
 				</div>
 			</div>
 		</main><!-- End Body -->
 
+		<!--Footer-->
+		<footer class="page-footer">
+			<div class="container">
+				GP MXH: 316/GP-BTTT do Bộ TTTT cấp.
+				<br/>
+				Ghienbongda.vn &copy; 2016
+			</div>
+		</footer>
+		<!--End Footer-->
 
 		<!--Import jQuery before materialize.js-->
 		<script type="text/javascript" src="assets/ghien/js/jquery-2.1.1.min.js"></script>
