@@ -438,8 +438,15 @@ footer {
 .title-category {
   color: #fff;
   text-transform: uppercase;
-  background: #192836;
+  background: #182837;
   padding: 10px;
-  font-weight: bold; }
+  font-weight: 700; }
+
+.content {
+  padding: 15px 10px;
+  background-color: #fff; }
+
+.no-margin-top {
+  margin-top: 0; }
 
 /*# sourceMappingURL=ghien.css.map */

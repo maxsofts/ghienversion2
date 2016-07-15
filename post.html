@@ -176,51 +176,53 @@
 						<header class="title-category">
 							<i class="fa fa-calendar-check-o"></i> Gừi bài viết
 						</header>
-						<div class="card-panel hoverable">
-							<div class="row">
-								<form method="POST" class="col s12">
-									<div class="row">
-									
-										<div class="input-field col s12">
-											<i class="material-icons prefix">https</i>
-											<select id="slct_category" class="validate">
-												<option value="" disabled selected>Chọn chuyên mục</option>
-												<option value="1">Option 1</option>
-												<option value="2">Option 2</option>
-												<option value="3">Option 3</option>
-											</select>
-											<label for="slct_category">Chuyên Mục</label>
-										</div>
+						<div id="list_new_content" class="clearfix">
+							<div class="card-panel hoverable no-margin-top">
+								<div class="row">
+									<form method="POST" class="col s12">
+										<div class="row">
 										
-										<div class="input-field col s12">
-											<i class="material-icons prefix">https</i>
-											<input id="txt_title" type="text" />
-											<label for="txt_title">Tiêu Đề Bài Viết</label>
+											<div class="input-field col s12">
+												<i class="material-icons prefix">https</i>
+												<select id="slct_category" class="validate">
+													<option value="" disabled selected>Chọn chuyên mục</option>
+													<option value="1">Option 1</option>
+													<option value="2">Option 2</option>
+													<option value="3">Option 3</option>
+												</select>
+												<label for="slct_category">Chuyên Mục</label>
+											</div>
+											
+											<div class="input-field col s12">
+												<i class="material-icons prefix">https</i>
+												<input id="txt_title" type="text" />
+												<label for="txt_title">Tiêu Đề Bài Viết</label>
+											</div>
+											
+											<div class="input-field col s12">
+												<i class="material-icons prefix">mode_edit</i>
+												<textarea id="area_description" class="materialize-textarea"></textarea>
+												<label for="area_description">Mô Tả</label>
+											</div>
+											
+											<div class="input-field col s12">
+												<i class="material-icons prefix">mode_edit</i>
+												<textarea id="area_detail" class="materialize-textarea"></textarea>
+												<label for="area_detail">Chi Tiết</label>
+											</div>
+											
+											<div class="input-field col s12 center">
+												<button class="ghien-btn btn waves-effect waves-light ghien-blue">
+													Đăng
+												</button>
+												<button type="reset" class="ghien-btn btn waves-effect waves-light red">
+													Xóa
+												</button>
+											</div>
+											
 										</div>
-										
-										<div class="input-field col s12">
-											<i class="material-icons prefix">mode_edit</i>
-											<textarea id="area_description" class="materialize-textarea"></textarea>
-											<label for="area_description">Mô Tả</label>
-										</div>
-										
-										<div class="input-field col s12">
-											<i class="material-icons prefix">mode_edit</i>
-											<textarea id="area_detail" class="materialize-textarea"></textarea>
-											<label for="area_detail">Chi Tiết</label>
-										</div>
-										
-										<div class="input-field col s12 center">
-											<button class="ghien-btn btn waves-effect waves-light ghien-blue">
-												Đăng
-											</button>
-											<button type="reset" class="ghien-btn btn waves-effect waves-light red">
-												Xóa
-											</button>
-										</div>
-										
-									</div>
-								</form>
+									</form>
+								</div>
 							</div>
 						</div>
 					</div><!-- End Content left -->
@@ -229,8 +231,13 @@
 						<header class="title-category">
 							<i class="fa fa-calendar-check-o"></i> Gừi bài viết
 						</header>
-						<div class="card-panel hoverable">
-							1234
+						<div class="card-panel hoverable no-margin-top">
+							<div ng-app="">
+
+								<p>Name: <input type="text" ng-model="name"></p>
+								<p>You wrote: {{ name }}</p> 
+
+							</div>
 						</div>
 						<div class="card-panel hoverable">
 							1234
@@ -253,7 +260,7 @@
 		<!--Import jQuery before materialize.js-->
 		<script type="text/javascript" src="assets/ghien/js/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="assets/materialize/js/materialize.min.js"></script>
-
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 		<script type="text/javascript" src="assets/ghien/js/base.js"></script>
 	</body>
 </html>
