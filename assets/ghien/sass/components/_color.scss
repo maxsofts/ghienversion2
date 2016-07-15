@@ -12,6 +12,9 @@ $ghien-blue: (
 $ghien-grey: (
         "base":#f6f6f6
 );
+$ghien-green: (
+        "base":#26a69a
+);
 
 $ghien-facebook: (
         "base": #3b5998
@@ -29,6 +32,7 @@ $colors: (
         'ghien-blue':$ghien-blue,
         'ghien-grey':$ghien-grey,
         'ghien-facebook':$ghien-facebook,
+        'ghien-green':$ghien-green,
         'shades':$shades
 );
 

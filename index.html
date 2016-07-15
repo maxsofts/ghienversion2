@@ -204,7 +204,8 @@
                                 <label for="register_v_password">Xác nhân mật khẩu</label>
                             </div>
                             <div class="input-field col s12 center">
-                                <button type="submit" class="ghien-btn btn waves-effect waves-light ghien-blue">
+                                <button type="submit" class="ghien-btn btn waves-effect waves-light ghien-blue"
+                                        onclick="Materialize.toast('<div class=\'center\'>Đăng ký thành công<br>Nhập mã kích hoạt để sử dụng</div>', 5000);return $('#modal_active_form').openModal(); //Login hiển thị">
                                     Đăng ký
                                 </button>
                                 <button type="reset" class="ghien-btn btn waves-effect waves-light">
@@ -214,14 +215,83 @@
                         </form>
                     </div>
                 </div><!-- Form Đăng ký -->
-
-                <!-- Form kích hoạt tài khoản -->
-                <div id="modal_active_form" class="col s12">
-
-                </div>
             </div>
         </div>
     </div> <!-- End Modal Đăng nhập đăng ký -->
+
+    <!-- Modal kích hoạt tài khoản -->
+    <div id="modal_active_form" class="modal bottom-sheet">
+        <div class="modal-header">
+            <ul class="tabs ghien-tabs">
+                <li class="tab col s3"><a class="active" href="#active">Đã có mã kích hoạt</a></li>
+                <li class="tab col s3"><a href="#send_code_active">Chưa có mã kích hoạt</a></li>
+            </ul>
+        </div>
+
+        <div class="modal-content">
+            <!-- Form kích hoạt tài khoản -->
+            <div id="active" class="col s12">
+                <div class="ghien-field-break">
+                    <div class="center">
+                        <fieldset>
+                            <legend>
+                                <strong class="red-text">Kiểm tra tin nhắn mà chúng tôi đã gửi cho bạn</strong>
+                            </legend>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 m5">
+                        <i class="material-icons prefix">phonelink_ring</i>
+                        <input disabled id="active_username" type="tel" value="01693493926" class="validate"
+                               require="require">
+                        <label for="active_username">Số điện thoại</label>
+                    </div>
+                    <div class="input-field col s12 m5">
+                        <i class="material-icons prefix">phonelink_lock</i>
+                        <input id="active_code" type="text" class="validate" require="require">
+                        <label for="active_code">Mã kích hoạt</label>
+                    </div>
+                    <div class="input-field col s12 m2 center">
+                        <button type="submit" class="ghien-btn btn waves-effect waves-light ghien-blue"
+                                onclick="$('.modal').each(function(){$(this).closeModal();}); return Materialize.toast('Kích hoạt thành công', 5000);"
+                        >
+                            Kích hoạt
+                        </button>
+                    </div>
+                </div>
+            </div><!-- End Form kích hoạt tài khoản -->
+            <!-- Mở form gửi lại mã kích hoạt -->
+            <div id="send_code_active" class="col s12">
+                <div class="ghien-field-break">
+                    <div class="center">
+                        <fieldset>
+                            <legend>
+                                <strong class="teal-text">
+                                    Nhập số điện thoại đã đăng ký của bạn - chúng tôi sẽ gửi lại mã kích hoạt
+                                </strong>
+                            </legend>
+                        </fieldset>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 m6">
+                            <i class="material-icons prefix">phonelink_ring</i>
+                            <input id="active_username_send" type="tel" value="01693493926" class="validate"
+                                   require="require">
+                            <label for="active_username_send">Số điện thoại</label>
+                        </div>
+                        <div class="input-field col s12 m6 center">
+                            <button type="submit" class="ghien-btn btn waves-effect waves-light ghien-blue"
+                                    onclick="$('ul.tabs').tabs('select_tab', 'active');return  Materialize.toast('Gửi tin nhắn thành công', 5000)">
+                                Gửi lại mã kích hoạt
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End form gửi lại mã kích hoạt -->
+        </div>
+
+    </div>
 </header><!-- Kết Header -->
 
 <!-- Body -->
@@ -236,7 +306,8 @@
                     <div class="row">
                         <!-- Avatar -->
                         <div class="col s12 m2 center">
-                            <img src="assets/ghien/images/main/logo_gbd.png" class="responsive-img ghien-card-avatar"
+                            <img src="assets/ghien/images/main/logo_gbd.png"
+                                 class="responsive-img ghien-card-avatar"
                                  alt="Avatar"/>
                         </div> <!-- End Avatar -->
                         <!-- Input new feed -->

@@ -30,6 +30,12 @@
 .ghien-facebook-text {
   color: #3b5998 !important; }
 
+.ghien-green {
+  background-color: #26a69a !important; }
+
+.ghien-green-text {
+  color: #26a69a !important; }
+
 .shades.black {
   background-color: #000000 !important; }
 
@@ -425,6 +431,10 @@ nav {
    ========================================================================== */
 .modal .modal-content {
   overflow: hidden; }
+
+.toast {
+  background-color: #26a69a !important;
+  color: #FFFFFF !important; }
 
 footer {
   background: transparent !important; }
