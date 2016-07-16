@@ -35,10 +35,12 @@
     /**
      * Trigger Tabs
      */
-    $(document).ready(function(){
+    $(document).ready(function () {
         $('ul.tabs').tabs();
-        
-    $('select').material_select();
+
+        $('select').material_select();
+
+        $('.materialboxed').materialbox();
     });
     ////////////////////////
     //End Function Load ///
@@ -52,6 +54,21 @@
 
         console.log(this.attr('id'));
     };
+
+    /**
+     * Hiện thị xem thêm dạng collection
+     */
+    $.fn.showCollection = function () {
+        var element = this;
+
+        var hide = element.find('.hide').each(function () {
+            $(this).css('opacity', '0');
+            $(this).removeClass('hide');
+
+        });
+
+        Materialize.showStaggeredList("#" + element.attr('id'));
+    }
 
 
 })(jQuery);

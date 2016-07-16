@@ -1,0 +1,58 @@
+.ghien-comment {
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  overflow: hidden;
+
+  &.ghien-comment-depth-1 {
+
+    .ghien-comment-item.avatar {
+      min-height: 84px;
+      padding-left: 72px;
+      position: relative;
+
+      .avatar {
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        overflow: hidden;
+        left: 15px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  &.ghien-comment-depth-2 {
+    border-left: 1px ghien-color('ghien-green', 'base') solid;
+
+    .ghien-comment-item.avatar {
+      min-height: 84px;
+      padding-left: 72px;
+      position: static !important;
+      width: auto !important;
+      height: auto !important;
+      .ghien-item {
+        font-size: .85rem;
+      }
+    }
+  }
+}
+
+//Read more
+.ghien-comment-readmore {
+
+  .ghien-comment-total {
+
+  }
+}
+
+//Comment
+.ghien-comment-form {
+  .avatar {
+    width: 35px;
+    height: 35px;
+  }
+}

@@ -1,0 +1,28 @@
+/* Social
+   ========================================================================== */
+.ghien-social {
+  margin-top: 5px;
+  border-top: 1px ghien_color('ghien-grey', 'base') solid;
+  font-size: .8rem;
+  ul {
+    display: inline-block;
+    margin-top: 5px;
+    li {
+      display: inline-block;
+
+      padding-right: 10px;
+
+      a {
+        color: ghien_color("shades", "black");
+      }
+
+      &:hover {
+        a{
+          i{
+            color: ghien_color('ghien-red','base');
+          }
+        }
+      }
+    }
+  }
+}

@@ -9,6 +9,10 @@ main {
 
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 /* Style Main
    ========================================================================== */
 .file-control {
@@ -51,6 +55,6 @@ main {
 }
 
 //Resize height
-.ghien-btn{
+.ghien-btn {
   margin-bottom: 15px;
 }

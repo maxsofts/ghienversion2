@@ -1,0 +1,18 @@
+.input-group {
+  display: table;
+
+  input, .suffix {
+    display: table-cell;
+  }
+
+  .suffix {
+    width: 1%;
+
+    label {
+      top: inherit;
+      left: inherit;
+      position: inherit;
+    }
+  }
+}
+

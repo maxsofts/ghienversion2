@@ -1,0 +1,11 @@
+.ghien-collection {
+  .ghien-collection-item {
+    padding: 5px;
+    .row {
+      margin-bottom: 0;
+    }
+    &.hide {
+      opacity: 0;
+    }
+  }
+}

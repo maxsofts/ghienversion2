@@ -6,4 +6,12 @@
   .ghien-card-avatar {
     margin-top: 30px;
   }
+
 }
+
+.ghien-card-content {
+  &.card .card-action + .card-reveal {
+    padding-bottom: 100px;
+  }
+}
+

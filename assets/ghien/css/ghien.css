@@ -324,6 +324,9 @@ body {
 main {
   margin-top: 40px; }
 
+a:hover {
+  cursor: pointer; }
+
 /* Style Main
    ========================================================================== */
 .file-control {
@@ -356,6 +359,23 @@ main {
 
 .ghien-btn {
   margin-bottom: 15px; }
+
+/* Social
+   ========================================================================== */
+.ghien-social {
+  margin-top: 5px;
+  border-top: 1px #f6f6f6 solid;
+  font-size: .8rem; }
+  .ghien-social ul {
+    display: inline-block;
+    margin-top: 5px; }
+    .ghien-social ul li {
+      display: inline-block;
+      padding-right: 10px; }
+      .ghien-social ul li a {
+        color: #000000; }
+      .ghien-social ul li:hover a i {
+        color: #ee3346; }
 
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
@@ -413,6 +433,9 @@ nav {
   .ghien-card-panel .ghien-card-avatar {
     margin-top: 30px; }
 
+.ghien-card-content.card .card-action + .card-reveal {
+  padding-bottom: 100px; }
+
 .ghien-tabs .tab a {
   -moz-transition: all .3s ease-in;
   -o-transition: all .3s ease-in;
@@ -428,9 +451,62 @@ nav {
 .modal .modal-content {
   overflow: hidden; }
 
+/* Toast
+   ========================================================================== */
 .toast {
   background-color: #26a69a !important;
   color: #FFFFFF !important; }
+
+.ghien-collection .ghien-collection-item {
+  padding: 5px; }
+  .ghien-collection .ghien-collection-item .row {
+    margin-bottom: 0; }
+  .ghien-collection .ghien-collection-item.hide {
+    opacity: 0; }
+
+.ghien-comment {
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  overflow: hidden; }
+  .ghien-comment.ghien-comment-depth-1 .ghien-comment-item.avatar {
+    min-height: 84px;
+    padding-left: 72px;
+    position: relative; }
+    .ghien-comment.ghien-comment-depth-1 .ghien-comment-item.avatar .avatar {
+      position: absolute;
+      width: 42px;
+      height: 42px;
+      overflow: hidden;
+      left: 15px;
+      display: inline-block;
+      vertical-align: middle; }
+    .ghien-comment.ghien-comment-depth-1 .ghien-comment-item.avatar p {
+      margin: 0; }
+  .ghien-comment.ghien-comment-depth-2 {
+    border-left: 1px #26a69a solid; }
+    .ghien-comment.ghien-comment-depth-2 .ghien-comment-item.avatar {
+      min-height: 84px;
+      padding-left: 72px;
+      position: static !important;
+      width: auto !important;
+      height: auto !important; }
+      .ghien-comment.ghien-comment-depth-2 .ghien-comment-item.avatar .ghien-item {
+        font-size: .85rem; }
+
+.ghien-comment-form .avatar {
+  width: 35px;
+  height: 35px; }
+
+.input-group {
+  display: table; }
+  .input-group input, .input-group .suffix {
+    display: table-cell; }
+  .input-group .suffix {
+    width: 1%; }
+    .input-group .suffix label {
+      top: inherit;
+      left: inherit;
+      position: inherit; }
 
 footer {
   background: transparent !important; }
