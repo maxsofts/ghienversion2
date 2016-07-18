@@ -58,3 +58,23 @@ a:hover {
 .ghien-btn {
   margin-bottom: 15px;
 }
+.first-title{
+  display: block;
+}
+.first-title:first-letter{
+  text-transform:uppercase;
+}
+.relative{
+  position: relative;
+  padding:16px
+}
+.title_edit_pr{
+  padding: 15px;
+  color: #fff;
+  background: #dedede;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.hidden{
+  display: none;
+}

@@ -360,6 +360,26 @@ a:hover {
 .ghien-btn {
   margin-bottom: 15px; }
 
+.first-title {
+  display: block; }
+
+.first-title:first-letter {
+  text-transform: uppercase; }
+
+.relative {
+  position: relative;
+  padding: 16px; }
+
+.title_edit_pr {
+  padding: 15px;
+  color: #fff;
+  background: #dedede;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.hidden {
+  display: none; }
+
 /* Social
    ========================================================================== */
 .ghien-social {
@@ -524,5 +544,66 @@ footer {
 
 .no-margin-top {
   margin-top: 0; }
+
+.ico_red_card {
+  background: url("../images/main/red_card.png") no-repeat left center;
+  width: 25px;
+  height: 40px;
+  margin: -15px 0px; }
+
+.ico_yellow_card {
+  background: url("../images/main/yellow_card.png") no-repeat left center;
+  width: 25px;
+  height: 40px;
+  margin: -15px 0px; }
+
+#bg_profile {
+  position: relative; }
+  #bg_profile .information_profiles {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    transform: translate(0, -50%); }
+    #bg_profile .information_profiles img {
+      cursor: pointer; }
+
+.menu_profile {
+  margin-top: 100px;
+  border: 1px solid #dedede;
+  padding: 3px 0 3px 0; }
+  .menu_profile a {
+    color: #1d0b1c;
+    font-size: 16px; }
+    .menu_profile a small {
+      font-weight: normal;
+      text-transform: capitalize; }
+
+.button-edit {
+  position: absolute;
+  bottom: -14px;
+  right: 25px; }
+  .button-edit ul li {
+    margin: 3px 11px 0 0 !important; }
+
+.information_pr .title_r_ct {
+  color: #fff;
+  padding: 10px;
+  background: #192836;
+  border-radius: 5px 5px 0px 0px;
+  text-transform: uppercase;
+  font-weight: bold; }
+  .information_pr .title_r_ct .ico_settings {
+    background: url("../images/main/ico_setting.png") no-repeat left center;
+    width: 25px;
+    height: 40px;
+    margin: -15px 0px; }
+.information_pr .information_pr_content {
+  border-radius: 0px 0px 5px 5px;
+  background: #fff;
+  border: 1px solid #dedede;
+  padding: 20px 10px 20px 10px; }
+  .information_pr .information_pr_content .card_info .color_aaa {
+    padding: 0px 10px;
+    color: #aaaaaa; }
 
 /*# sourceMappingURL=ghien.css.map */
