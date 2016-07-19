@@ -16,3 +16,70 @@
   }
 }
 
+//Form
+.ghien-form-status-create {
+
+  .preview {
+    //width: 100px;
+    //margin: 0 auto;
+    //overflow: hidden;
+    //position: relative;
+    //height: 100px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    //-webkit-user-select: none;
+    width: 100%;
+    height: 112px;
+    white-space: nowrap;
+    display: inline-block;
+    .image-preview {
+      width: 100px;
+      height: 100px;
+      overflow: hidden;
+      position: relative;
+      display: inline-block;
+    }
+
+    label.image-preview {
+      border: 1px ghien_color("shades", 'black') dotted;
+      text-align: center;
+      cursor: pointer;
+      i {
+        line-height: 95px;
+      }
+
+      &:hover {
+        i{
+          color: ghien_color("shades", 'black') !important;
+        }
+      }
+    }
+
+    img {
+      margin-left: 0px;
+      position: absolute;
+    }
+
+    .loading {
+      position: absolute;
+      top: 30%;
+      left: 30%;
+    }
+
+    a.close {
+      position: absolute;
+      right: 0px;
+      color: ghien_color('shades', 'white');
+      &.hover-show {
+        opacity: 0;
+      }
+    }
+    &:hover {
+      a.close {
+        &.hover-show {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

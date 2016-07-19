@@ -333,7 +333,7 @@
     <div class="container">
         <div class="row">
             <!-- Content Left -->
-            <div class="col s12 m6 l8">
+            <div class="col s12 m6 l7">
                 <!-- Status -->
                 <div class="card-panel hoverable ghien-card-panel">
                     <!-- Add new Status -->
@@ -345,76 +345,418 @@
                                  alt="Avatar"/>
                         </div> <!-- End Avatar -->
                         <!-- Input new feed -->
-                        <div class="col s12 m10">
+                        <div class="col s12 m10 ghien-form-status-create">
                             <div class="input-field">
                                 <textarea id="newStatus" class="materialize-textarea"></textarea>
                                 <label for="newStatus">Bạn đang nghĩ gì ?</label>
                             </div>
                             <!-- Require Login -->
                             <div class="clearfix">
-                                <label for="image" class="btn waves-effect waves-light grey" name="action">
+                                <label for="image" class="btn waves-effect waves-light grey hide" name="action">
                                     <i class="tiny material-icons">camera_enhance</i>
                                 </label>
-                                <input type="file" id="image" name="image" class="file-control"
-                                       onchange="return $(this).uploadImage()">
+                                <input type="file" id="image" name="image" class="file-control" multiple="multiple"
+                                       data-preview="preview-image-status">
 
-                                <div id="image-loader" class="preloader-wrapper small active hide">
-                                    <div class="spinner-layer spinner-blue">
-                                        <div class="circle-clipper left">
-                                            <div class="circle"></div>
-                                        </div>
-                                        <div class="gap-patch">
-                                            <div class="circle"></div>
-                                        </div>
-                                        <div class="circle-clipper right">
-                                            <div class="circle"></div>
+                                <div class="preview left" id="preview-image-status">
+                                    <div class="image-preview">
+                                        <img class="materialboxed" width="650" src="assets/ghien/images/main/demo.png"/>
+
+                                        <a href="#!" class="hover-show right close">
+                                            <i class="material-icons">close</i>
+                                        </a>
+                                        <div class="loading preloader-wrapper small active">
+                                            <div class="spinner-layer spinner-blue">
+                                                <div class="circle-clipper left">
+                                                    <div class="circle"></div>
+                                                </div>
+                                                <div class="gap-patch">
+                                                    <div class="circle"></div>
+                                                </div>
+                                                <div class="circle-clipper right">
+                                                    <div class="circle"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="spinner-layer spinner-red">
+                                                <div class="circle-clipper left">
+                                                    <div class="circle"></div>
+                                                </div>
+                                                <div class="gap-patch">
+                                                    <div class="circle"></div>
+                                                </div>
+                                                <div class="circle-clipper right">
+                                                    <div class="circle"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="spinner-layer spinner-yellow">
+                                                <div class="circle-clipper left">
+                                                    <div class="circle"></div>
+                                                </div>
+                                                <div class="gap-patch">
+                                                    <div class="circle"></div>
+                                                </div>
+                                                <div class="circle-clipper right">
+                                                    <div class="circle"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="spinner-layer spinner-green">
+                                                <div class="circle-clipper left">
+                                                    <div class="circle"></div>
+                                                </div>
+                                                <div class="gap-patch">
+                                                    <div class="circle"></div>
+                                                </div>
+                                                <div class="circle-clipper right">
+                                                    <div class="circle"></div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class="image-preview">
+                                        <img class="materialboxed" src="assets/ghien/images/main/demo.png"/>
 
-                                    <div class="spinner-layer spinner-red">
-                                        <div class="circle-clipper left">
-                                            <div class="circle"></div>
-                                        </div>
-                                        <div class="gap-patch">
-                                            <div class="circle"></div>
-                                        </div>
-                                        <div class="circle-clipper right">
-                                            <div class="circle"></div>
+                                        <a href="#!" class="hover-show right close">
+                                            <i class="material-icons">close</i>
+                                        </a>
+                                        <div class="loading preloader-wrapper small active">
+                                            <div class="spinner-layer spinner-blue">
+                                                <div class="circle-clipper left">
+                                                    <div class="circle"></div>
+                                                </div>
+                                                <div class="gap-patch">
+                                                    <div class="circle"></div>
+                                                </div>
+                                                <div class="circle-clipper right">
+                                                    <div class="circle"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="spinner-layer spinner-red">
+                                                <div class="circle-clipper left">
+                                                    <div class="circle"></div>
+                                                </div>
+                                                <div class="gap-patch">
+                                                    <div class="circle"></div>
+                                                </div>
+                                                <div class="circle-clipper right">
+                                                    <div class="circle"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="spinner-layer spinner-yellow">
+                                                <div class="circle-clipper left">
+                                                    <div class="circle"></div>
+                                                </div>
+                                                <div class="gap-patch">
+                                                    <div class="circle"></div>
+                                                </div>
+                                                <div class="circle-clipper right">
+                                                    <div class="circle"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="spinner-layer spinner-green">
+                                                <div class="circle-clipper left">
+                                                    <div class="circle"></div>
+                                                </div>
+                                                <div class="gap-patch">
+                                                    <div class="circle"></div>
+                                                </div>
+                                                <div class="circle-clipper right">
+                                                    <div class="circle"></div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-
-                                    <div class="spinner-layer spinner-yellow">
-                                        <div class="circle-clipper left">
-                                            <div class="circle"></div>
-                                        </div>
-                                        <div class="gap-patch">
-                                            <div class="circle"></div>
-                                        </div>
-                                        <div class="circle-clipper right">
-                                            <div class="circle"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="spinner-layer spinner-green">
-                                        <div class="circle-clipper left">
-                                            <div class="circle"></div>
-                                        </div>
-                                        <div class="gap-patch">
-                                            <div class="circle"></div>
-                                        </div>
-                                        <div class="circle-clipper right">
-                                            <div class="circle"></div>
-                                        </div>
-                                    </div>
+                                    <label for="image" class="image-preview">
+                                        <i class="material-icons grey-text medium">add</i>
+                                    </label>
                                 </div>
+
                                 <a class="waves-effect waves-light btn right">
                                     Đăng
                                 </a>
                             </div><!-- End require Login -->
-                        </div>
+                        </div> <!-- End input new feed-->
                     </div>
                 </div>
+                <!-- Danh sách status -->
+                <div class="card hoverable ghien-card-content">
+                    <!-- Nội dung status -->
+                    <div class="card-content">
+                        <div class="ghien-card-info">
+                            <img src="assets/ghien/images/main/logo_gbd.png" class="responsive-img avatar"/>
+                            <a href="#" class="title">Đức sát thủ</a>
 
+                            <p class="time grey-text lighten-3">
+                                3 giờ trước
+                            </p>
+
+                            <div class="ghien-card-action" style="position: relative;">
+                                <div class="fixed-action-btn horizontal click-to-toggle" style="position: absolute;">
+                                    <a class="red-text ghien-more-vert">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <ul>
+                                        <li><a class="btn-floating red"><i class="material-icons">delete_sweep</i></a>
+                                        </li>
+                                        <li><a class="btn-floating teal"><i class="material-icons">mode_edit</i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            Đời ai không lo toan hai điều cơm áo xoay quanh đồng tiền, Đời nhìn ta bôn ba hai mùa mưa
+                            nắng đong đầy tháng năm
+                        </p>
+                        <!-- Ảnh bìa nếu có-->
+                        <div class="waves-effect waves-block waves-light">
+                            <img src="assets/ghien/images/main/cover.jpg" class="responsive-img">
+                        </div><!-- End ảnh bìa -->
+
+                        <!-- Like share -->
+                        <div class="ghien-social">
+                            <ul>
+                                <li>
+                                    <a href="#" class="valign-wrapper">
+                                        <i class="material-icons valign">favorite</i> Thích
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="valign-wrapper activator">
+                                        <i class="material-icons valign">comment</i> Bình luận
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="valign-wrapper">
+                                        <i class="material-icons valign">share</i> Chia sẻ
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="ghien-like ghien-height-20">
+                                <p>
+                                    <a href="#modal_view_like" class="left valign-wrapper modal-trigger"
+                                       title="Đức sát thủ">
+                                        <i class="material-icons valign red-text">favorite</i> 1k lượt thích
+                                    </a>
+                                    <a class="right valign-wrapper activator" title="Củ lạc">
+                                        <i class="material-icons valign">comment</i> 1m bình luận
+                                    </a>
+                                </p>
+                            </div>
+                        </div><!-- End like share -->
+
+
+                    </div><!--End Nội dung status -->
+                    <!-- Viết Comment cấp 1 -->
+                    <div class="card-action">
+                        <div class="ghien-comment-form">
+                            <div class="row">
+                                <div class="input-field input-group col s12">
+                                    <img src="assets/ghien/images/main/logo_gbd.png" alt="avatar"
+                                         class="prefix responsive-img avatar"/>
+                                    <input id="comment-depth-2" type="text" class="validate">
+                                    <label for="comment-depth-2">Viết bình luận</label>
+                                    <span class="suffix">
+                                        <label for="comment-insert-image-1"
+                                               class="btn btn-floating waves-effect waves-light">
+                                            <i class="tiny material-icons">camera_enhance</i>
+                                        </label>
+                                        <input type="file" id="comment-insert-image-2" name="comment-insert-image-2"
+                                               class="file-control"
+                                               onchange="return $(this).uploadImage()">
+
+                                    </span>
+                                    <span class="suffix">
+                                        <a class="btn btn-floating waves-effect waves-light">
+                                            <i class="material-icons">tag_faces</i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--Viết Comment cấp 1 -->
+                    <!-- Nội dung comment -->
+                    <div class="card-reveal">
+                        <!-- Xem thêm các comment nếu có -->
+                        <div class="ghien-comment-readmore">
+                            <a class="valign-wrapper ghien-primary-text">
+                                <i class="material-icons valign materialize-red-text">art_track</i>
+                                Xem thêm 1m bình luận khác
+                            </a>
+                        </div> <!-- End Xem thêm các comment nếu có -->
+                        <!-- Hiện thị các comment -->
+                        <ul class="ghien-comment ghien-comment-depth-1 ">
+                            <!-- Comment item cấp 1-->
+                            <li class="ghien-comment-item avatar">
+                                <div class="ghien-item">
+                                    <img src="assets/ghien/images/main/logo_gbd.png" alt="Avatar"
+                                         class="avatar responsive-img"/>
+                                    <a href="#" class="title">Đức sát thủ</a>
+
+                                    <p>
+                                        Thật không thể tin,Thật không thể tin,Thật không thể tin,Thật không thể tin,Thật
+                                        không thể tin,Thật không thể tin
+                                    </p>
+                                    <img class="ghien-item-image"
+                                         data-caption="Thật không thể tin" width="250"
+                                         src="assets/ghien/images/main/office.jpg"/>
+
+                                    <!-- Like share -->
+                                    <div class="ghien-social">
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="valign-wrapper">
+                                                    <i class="material-icons valign red-text">favorite</i> 96
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="valign-wrapper activator">
+                                                    <i class="material-icons valign">comment</i> Trả lời
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <span class="valign-wrapper activator">
+                                                    <i class="material-icons">av_timer</i>Khoảng 1 giờ
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div><!-- End like share -->
+                                </div>
+                                <!-- Mở comment cấp 2 -->
+                                <!-- Xem thêm các comment nếu có -->
+                                <div class="ghien-comment-readmore">
+                                    <a class="valign-wrapper ghien-primary-text">
+                                        <i class="material-icons valign materialize-red-text">art_track</i>
+                                        Xem thêm 18 bình luận khác
+                                    </a>
+                                </div> <!-- End Xem thêm các comment nếu có -->
+                                <ul class="ghien-comment ghien-comment-depth-2">
+
+                                </ul><!-- Đóng comment cấp 2 -->
+                            </li><!-- End comment item cấp 1 -->
+
+                            <!-- Comment item cấp 1-->
+                            <li class="ghien-comment-item avatar">
+                                <div class="ghien-item">
+                                    <img src="assets/ghien/images/main/logo_gbd.png" alt="Avatar"
+                                         class="avatar responsive-img"/>
+                                    <a href="#" class="title">Đức sát thủ</a>
+
+                                    <p>
+                                        Thật không thể tin,Thật không thể tin,Thật không thể tin,Thật không thể tin,Thật
+                                        không thể tin,Thật không thể tin
+                                    </p>
+                                    <img class="ghien-item-image"
+                                         data-caption="Thật không thể tin" width="250"
+                                         src="assets/ghien/images/main/office.jpg"/>
+
+                                    <!-- Like share -->
+                                    <div class="ghien-social">
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="valign-wrapper">
+                                                    <i class="material-icons valign red-text">favorite</i> 96
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="valign-wrapper activator">
+                                                    <i class="material-icons valign">comment</i> Trả lời
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <span class="valign-wrapper activator">
+                                                    <i class="material-icons">av_timer</i>Khoảng 1 giờ
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div><!-- End like share -->
+                                </div>
+                                <!-- Mở comment cấp 2 -->
+                                <ul class="ghien-comment ghien-comment-depth-2">
+                                    <li class="ghien-comment-item avatar">
+                                        <div class="ghien-item">
+                                            <img src="assets/ghien/images/main/logo_gbd.png" alt="Avatar"
+                                                 class="avatar responsive-img"/>
+                                            <a href="#" class="title">Đức sát thủ</a>
+
+                                            <p>
+                                                Thật không thể tin,Thật không thể tin,Thật không thể tin,Thật không thể
+                                                tin,Thật không thể tin,Thật không thể tin
+                                            </p>
+                                            <img class="ghien-item-image responsive-img"
+                                                 src="assets/ghien/images/main/tin_tuc.png"/>
+                                        </div>
+                                        <!-- Like share -->
+                                        <div class="ghien-social">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" class="valign-wrapper">
+                                                        <i class="material-icons valign red-text">favorite</i> 96
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="valign-wrapper activator">
+                                                        <i class="material-icons valign">comment</i> Trả lời
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                <span class="valign-wrapper activator">
+                                                    <i class="material-icons">av_timer</i>Khoảng 1 giờ
+                                                </span>
+                                                </li>
+                                            </ul>
+                                        </div><!-- End like share -->
+                                    </li>
+                                    <li class="ghien-comment-item avatar">
+                                        <div class="ghien-item">
+                                            <img src="assets/ghien/images/main/logo_gbd.png" alt="Avatar"
+                                                 class="avatar responsive-img"/>
+                                            <a href="#" class="title">Đức sát thủ</a>
+
+                                            <p>
+                                                Thật không thể tin,Thật không thể tin,Thật không thể tin,Thật không thể
+                                                tin,Thật không thể tin,Thật không thể tin
+                                            </p>
+
+                                        </div>
+                                        <!-- Like share -->
+                                        <div class="ghien-social">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" class="valign-wrapper">
+                                                        <i class="material-icons valign red-text">favorite</i> 96
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="valign-wrapper activator">
+                                                        <i class="material-icons valign">comment</i> Trả lời
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                <span class="valign-wrapper activator">
+                                                    <i class="material-icons">av_timer</i>Khoảng 1 giờ
+                                                </span>
+                                                </li>
+                                            </ul>
+                                        </div><!-- End like share -->
+                                    </li>
+                                </ul><!-- Đóng comment cấp 2 -->
+                            </li><!-- End comment item cấp 1 -->
+
+                        </ul><!-- Đóng phần hiển thị các comment -->
+
+                        <!-- Đóng bình luận -->
+                        <div class="card-title red-text text-darken-4">Bình luận
+                            <i class="material-icons right">close</i>
+                        </div><!-- End đóng bình luận -->
+                    </div><!-- End Nội dung comment -->
+
+                </div><!-- End Danh sách status -->
                 <!-- Danh sách bài viết -->
                 <div class="card hoverable ghien-card-content">
                     <!-- Ảnh bìa -->
@@ -674,9 +1016,10 @@
                     </div><!-- End Nội dung comment -->
 
                 </div><!-- End Danh sách bài viết -->
+
             </div><!-- End Content left -->
             <!-- Content Right -->
-            <div class="col s12 m6 l4">
+            <div class="col s12 m6 l5">
                 <div class="card-panel hoverable">
                     1234
                 </div>
@@ -793,6 +1136,7 @@
 <script type="text/javascript" src="assets/ghien/js/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="assets/materialize/js/materialize.min.js"></script>
 
+<script type="text/javascript" src="assets/ghien/js/jQuery.ghien.js"></script>
 <script type="text/javascript" src="assets/ghien/js/base.js"></script>
 </body>
 </html>

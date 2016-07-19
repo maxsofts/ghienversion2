@@ -7,11 +7,60 @@
     margin-top: 30px;
   }
 
+  .row {
+    margin-bottom: 0;
+  }
 }
 
 .ghien-card-content {
   &.card .card-action + .card-reveal {
-    padding-bottom: 100px;
+
+  }
+
+  .ghien-card-info {
+    min-height: 60px;
+    padding-left: 72px;
+    position: relative;
+
+    .avatar {
+      position: absolute;
+      width: 42px;
+      height: 42px;
+      overflow: hidden;
+      left: 15px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .ghien-card-action {
+      position: relative;
+
+      .fixed-action-btn {
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        z-index: 1;
+        li {
+          margin: 0;
+        }
+
+        .ghien-more-vert {
+          width: 37px;
+          height: 37px;
+
+          i {
+            line-height: 37px;
+          }
+        }
+      }
+    }
+  }
+
+  .card-action {
+    padding: 0 20px;
+
+    .row {
+      margin-bottom: 0;
+    }
   }
 }
 

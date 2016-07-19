@@ -383,6 +383,7 @@ a:hover {
 
 ::-webkit-scrollbar {
   width: 3px;
+  height: 3px;
   background-color: #f6f6f6;
   border-radius: 2px; }
 
@@ -432,9 +433,39 @@ nav {
   padding-top: 0; }
   .ghien-card-panel .ghien-card-avatar {
     margin-top: 30px; }
+  .ghien-card-panel .row {
+    margin-bottom: 0; }
 
-.ghien-card-content.card .card-action + .card-reveal {
-  padding-bottom: 100px; }
+.ghien-card-content .ghien-card-info {
+  min-height: 60px;
+  padding-left: 72px;
+  position: relative; }
+  .ghien-card-content .ghien-card-info .avatar {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+    left: 15px;
+    display: inline-block;
+    vertical-align: middle; }
+  .ghien-card-content .ghien-card-info .ghien-card-action {
+    position: relative; }
+    .ghien-card-content .ghien-card-info .ghien-card-action .fixed-action-btn {
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+      z-index: 1; }
+      .ghien-card-content .ghien-card-info .ghien-card-action .fixed-action-btn li {
+        margin: 0; }
+      .ghien-card-content .ghien-card-info .ghien-card-action .fixed-action-btn .ghien-more-vert {
+        width: 37px;
+        height: 37px; }
+        .ghien-card-content .ghien-card-info .ghien-card-action .fixed-action-btn .ghien-more-vert i {
+          line-height: 37px; }
+.ghien-card-content .card-action {
+  padding: 0 20px; }
+  .ghien-card-content .card-action .row {
+    margin-bottom: 0; }
 
 .ghien-tabs .tab a {
   -moz-transition: all .3s ease-in;
@@ -507,6 +538,43 @@ nav {
       top: inherit;
       left: inherit;
       position: inherit; }
+
+.ghien-form-status-create .preview {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  height: 112px;
+  white-space: nowrap;
+  display: inline-block; }
+  .ghien-form-status-create .preview .image-preview {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block; }
+  .ghien-form-status-create .preview label.image-preview {
+    border: 1px #000000 dotted;
+    text-align: center;
+    cursor: pointer; }
+    .ghien-form-status-create .preview label.image-preview i {
+      line-height: 95px; }
+    .ghien-form-status-create .preview label.image-preview:hover i {
+      color: #000000 !important; }
+  .ghien-form-status-create .preview img {
+    margin-left: 0px;
+    position: absolute; }
+  .ghien-form-status-create .preview .loading {
+    position: absolute;
+    top: 30%;
+    left: 30%; }
+  .ghien-form-status-create .preview a.close {
+    position: absolute;
+    right: 0px;
+    color: #FFFFFF; }
+    .ghien-form-status-create .preview a.close.hover-show {
+      opacity: 0; }
+  .ghien-form-status-create .preview:hover a.close.hover-show {
+    opacity: 1; }
 
 footer {
   background: transparent !important; }

@@ -41,19 +41,13 @@
         $('select').material_select();
 
         $('.materialboxed').materialbox();
+
+        $.fn.formUpload();
     });
     ////////////////////////
     //End Function Load ///
     //////////////////////
-    /**
-     * Function
-     * @param options
-     */
-    $.fn.uploadImage = function (options) {
-        var check = this.val();
 
-        console.log(this.attr('id'));
-    };
 
     /**
      * Hiện thị xem thêm dạng collection
